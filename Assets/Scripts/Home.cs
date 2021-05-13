@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class Home : MonoBehaviour{
     // Start the game
     public void StartGame(){
-        SceneManager.LoadScene("game");
+        SceneManager.LoadScene("lvl1");
     }
 }

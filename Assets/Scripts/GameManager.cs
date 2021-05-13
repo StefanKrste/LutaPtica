@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Assets.Scripts;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class GameManager : MonoBehaviour
     private List<GameObject> Bricks;
     private List<GameObject> Birds;
     private List<GameObject> Pigs;
+    public int currentLevel = 1;
+    public int highestLevel = 5;
 
     // Use this for initialization
     void Start()
@@ -63,15 +66,30 @@ public class GameManager : MonoBehaviour
             //in a normal game, we would show the "Won" screen 
             //and on tap the user would go to the next level
             case GameState.Won:
+                IncreaseLevel();
+                break;
             case GameState.Lost:
                 if (Input.GetMouseButtonUp(0))
                 {
-                    Application.LoadLevel(Application.loadedLevel);
+                    SceneManager.LoadScene("lvl" + currentLevel);
                 }
                 break;
             default:
                 break;
         }
+    }
+
+    public void IncreaseLevel()
+    {
+        if (currentLevel < highestLevel)
+        {
+            currentLevel++;
+        }
+        else
+        {
+            currentLevel = 1; //"END screen da se staj"
+        }
+        SceneManager.LoadScene("lvl" + currentLevel);
     }
 
 
