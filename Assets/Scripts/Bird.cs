@@ -5,7 +5,6 @@ using Assets.Scripts;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Bird : MonoBehaviour
 {
-
     // Use this for initialization
     void Start()
     {

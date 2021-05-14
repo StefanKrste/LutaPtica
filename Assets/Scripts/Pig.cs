@@ -3,10 +3,11 @@ using System.Collections;
 
 public class Pig : MonoBehaviour
 {
-
+    public HudManager hud;
     public float Health = 150f;
     public Sprite SpriteShownWhenHurt;
     private float ChangeSpriteHealth;
+    public GameManager lvl;
     // Use this for initialization
     void Start()
     {
@@ -22,6 +23,8 @@ public class Pig : MonoBehaviour
         {
             GetComponent<AudioSource>().Play();
             Destroy(gameObject);
+            lvl.IncreaseScore(50);
+            hud.Refresh();
         }
         else //we're hit by something else
         {
@@ -36,7 +39,12 @@ public class Pig : MonoBehaviour
             {//change the shown sprite
                 GetComponent<SpriteRenderer>().sprite = SpriteShownWhenHurt;
             }
-            if (Health <= 0) Destroy(this.gameObject);
+            if (Health <= 0)
+            {
+                Destroy(this.gameObject);
+                lvl.IncreaseScore(50);
+                hud.Refresh();
+            }
         }
     }
 

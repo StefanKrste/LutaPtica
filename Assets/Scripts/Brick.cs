@@ -3,7 +3,8 @@ using System.Collections;
 
 public class Brick : MonoBehaviour
 {
-
+    public GameManager lvl;
+    public HudManager hud;
 
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -16,8 +17,13 @@ public class Brick : MonoBehaviour
         //decrease health according to magnitude of the object that hit us
         Health -= damage;
         //if health is 0, destroy the block
-        if (Health <= 0) Destroy(this.gameObject);
-    }
+        if (Health <= 0)
+        {
+            Destroy(this.gameObject);
+            lvl.IncreaseScore(5);
+            hud.Refresh();
+        }
+        }
 
     public float Health = 70f;
 

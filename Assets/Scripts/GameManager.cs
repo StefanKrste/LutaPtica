@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour
     private List<GameObject> Pigs;
     public int currentLevel = 1;
     public int highestLevel = 5;
-
+    public int score = 0;
+    public int highScore = 0;
     // Use this for initialization
     void Start()
     {
@@ -84,15 +85,28 @@ public class GameManager : MonoBehaviour
         if (currentLevel < highestLevel)
         {
             currentLevel++;
+            SceneManager.LoadScene("lvl" + currentLevel);
         }
         else
         {
-            currentLevel = 1; //"END screen da se staj"
+            SceneManager.LoadScene("End");
         }
-        SceneManager.LoadScene("lvl" + currentLevel);
     }
 
+    public void IncreaseScore(int amount)
+    {
+        // Increase the score by the given amount
+        score += amount;
 
+        // Show the new score in the console
+        print("New Score: " + score.ToString());
+
+        if (score > highScore)
+        {
+            highScore = score;
+            print("New high score: " + highScore);
+        }
+    }
     /// <summary>
     /// A check whether all Pigs are null
     /// i.e. they have been destroyed
@@ -221,6 +235,4 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-
-
 }
