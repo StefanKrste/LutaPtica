@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Assets.Scripts;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,14 +20,21 @@ public class GameManager : MonoBehaviour
     public int highestLevel = 5;
     public int score = 0;
     public int highScore = 0;
+
     public static int score1 = 0;
     public static int score2 = 0;
-    public int score3 = score1;
-    public int score4 = score2;
-    public int score5 = 0;
-    public StaticVar staticvar;
+    public static int score3 = 0;
+    public static int score4 = 0;
+    public static int score5 = 0;
 
-    
+    public GameObject WinPanel;
+    public GameObject LosePanel;
+    public Text WinHscore;
+    public Text WinScore;
+    public Text LoseHscore;
+    public Text LoseScore;
+    public int Flag = 0;
+
     // Use this for initialization
     void Start()
     {
@@ -71,58 +79,104 @@ public class GameManager : MonoBehaviour
                     CurrentGameState = GameState.BirdMovingToSlingshot;
                 }
                 break;
-            //if we have won or lost, we will restart the level
-            //in a normal game, we would show the "Won" screen 
-            //and on tap the user would go to the next level
             case GameState.Won:
-                IncreaseLevel();
+                if (Flag == 0)
+                {
+                    IncreaseScore((3 - (currentBirdIndex + 1)) * 100);
+                    if (currentLevel == 1 && score > score1)
+                    {
+                        score1 = score;
+                        StaticVar.score1 = score;
+                    }
+                    if (currentLevel == 2 && score > score2)
+                    {
+                        score2 = score;
+                        StaticVar.score2 = score;
+                    }
+                    if (currentLevel == 3 && score > score3)
+                    {
+                        score3 = score;
+                        StaticVar.score3 = score;
+                    }
+                    if (currentLevel == 4 && score > score4)
+                    {
+                        score4 = score;
+                        StaticVar.score4 = score;
+                    }
+                    if (currentLevel == 5 && score > score5)
+                    {
+                        score5 = score;
+                        StaticVar.score5 = score;
+                    }
+                    Flag = 1;
+                }
+                WinPanel.SetActive(true);
+                if (currentLevel == 1) {
+                    WinHscore.text = "High Score: " + score1;
+                }
+                else if (currentLevel == 2)
+                {
+                    WinHscore.text = "High Score: " + score2;
+                }
+                else if (currentLevel == 3)
+                {
+                    WinHscore.text = "High Score: " + score3;
+                }
+                else if (currentLevel == 4)
+                {
+                    WinHscore.text = "High Score: " + score4;
+                }
+                else if (currentLevel == 5)
+                {
+                    WinHscore.text = "High Score: " + score5;
+                }
+                WinScore.text = "Score: " + score;
                 break;
             case GameState.Lost:
-                if (Input.GetMouseButtonUp(0))
+                LosePanel.SetActive(true);
+                if (currentLevel == 1)
                 {
-                    SceneManager.LoadScene("lvl" + currentLevel);
+                    LoseHscore.text = "High Score: " + score1;
                 }
+                else if (currentLevel == 2)
+                {
+                    LoseHscore.text = "High Score: " + score2;
+                }
+                else if (currentLevel == 3)
+                {
+                    LoseHscore.text = "High Score: " + score3;
+                }
+                else if (currentLevel == 4)
+                {
+                    LoseHscore.text = "High Score: " + score4;
+                }
+                else if (currentLevel == 5)
+                {
+                    LoseHscore.text = "High Score: " + score5;
+                }
+                LoseScore.text = "Score: " + score;
                 break;
             default:
                 break;
         }
     }
 
+    public void ResetLevel()
+    {
+         SceneManager.LoadScene("lvl" + currentLevel);
+    }
+
+
+
     public void IncreaseLevel()
     {
         if (currentLevel < highestLevel)
-        {
-            if (currentLevel==1 && score> score1)
-            {
-                score1 = score;
-                StaticVar.score1 = score; 
-            }
-            if (currentLevel == 2 && score > score2)
-            {
-                score2 = score;
-                StaticVar.score2 = score;
-            }
-            if (currentLevel == 3 && score > score3)
-            {
-                score3 = score;
-                StaticVar.score3 = score;
-            }
-            if (currentLevel == 4 && score > score4)
-            {
-                score4 = score;
-                StaticVar.score4 = score;
-            }
-            
+        {          
             currentLevel++;
             SceneManager.LoadScene("lvl" + currentLevel);
         }
         else
         {
-            if (currentLevel == 5 && score > score5)
-            {
-                score5 = score;
-                StaticVar.score5 = score;
-            }
             SceneManager.LoadScene("Menu");
         }
     }
@@ -251,7 +305,8 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Shows relevant GUI depending on the current game state
     /// </summary>
-    void OnGUI()
+    /// 
+    /*void OnGUI()
     {
         AutoResize(800, 480);
         switch (CurrentGameState)
@@ -268,5 +323,5 @@ public class GameManager : MonoBehaviour
             default:
                 break;
         }
-    }
+    }*/
 }
