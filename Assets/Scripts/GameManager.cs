@@ -19,6 +19,14 @@ public class GameManager : MonoBehaviour
     public int highestLevel = 5;
     public int score = 0;
     public int highScore = 0;
+    public static int score1 = 0;
+    public static int score2 = 0;
+    public int score3 = score1;
+    public int score4 = score2;
+    public int score5 = 0;
+    public StaticVar staticvar;
+
+    
     // Use this for initialization
     void Start()
     {
@@ -84,12 +92,38 @@ public class GameManager : MonoBehaviour
     {
         if (currentLevel < highestLevel)
         {
+            if (currentLevel==1 && score> score1)
+            {
+                score1 = score;
+                StaticVar.score1 = score; 
+            }
+            if (currentLevel == 2 && score > score2)
+            {
+                score2 = score;
+                StaticVar.score2 = score;
+            }
+            if (currentLevel == 3 && score > score3)
+            {
+                score3 = score;
+                StaticVar.score3 = score;
+            }
+            if (currentLevel == 4 && score > score4)
+            {
+                score4 = score;
+                StaticVar.score4 = score;
+            }
+            
             currentLevel++;
             SceneManager.LoadScene("lvl" + currentLevel);
         }
         else
         {
-            SceneManager.LoadScene("End");
+            if (currentLevel == 5 && score > score5)
+            {
+                score5 = score;
+                StaticVar.score5 = score;
+            }
+            SceneManager.LoadScene("Menu");
         }
     }
 
