@@ -13,7 +13,10 @@ public class tolvl5 : MonoBehaviour
 
     public void Goto()
     {
-        SceneManager.LoadScene("lvl5");
+        if (StaticVar.score4 != 0)
+        {
+            SceneManager.LoadScene("lvl5");
+        }
     }
     // Update is called once per frame
     void Update()

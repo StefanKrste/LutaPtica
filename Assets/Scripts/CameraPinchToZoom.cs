@@ -2,12 +2,6 @@
 using System.Collections;
 
 
-/// <summary>
-/// Found in 
-/// http://unity3d.com/pt/learn/tutorials/modules/beginner/platform-specific/pinch-zoom
-/// Contains both perspective and orthographic stuff, in this 2D game we'll
-/// be using only the orthographic one
-/// </summary>
 public class CameraPinchToZoom : MonoBehaviour
 {
     public float perspectiveZoomSpeed = 0.5f;        // The rate of change of the field of view in perspective mode.

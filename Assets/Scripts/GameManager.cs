@@ -240,10 +240,7 @@ public class GameManager : MonoBehaviour
                             }
                         });
     }
-
-    /// <summary>
-    /// Animates the bird from the waiting position to the slingshot
-    /// </summary>
+    
     void AnimateBirdToSlingshot()
     {
         CurrentGameState = GameState.BirdMovingToSlingshot;
@@ -262,21 +259,12 @@ public class GameManager : MonoBehaviour
                         });
     }
 
-    /// <summary>
-    /// Event handler, when the bird is thrown, camera starts following it
-    /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
     private void Slingshot_BirdThrown(object sender, System.EventArgs e)
     {
         cameraFollow.BirdToFollow = Birds[currentBirdIndex].transform;
         cameraFollow.IsFollowing = true;
     }
 
-    /// <summary>
-    /// Check if all birds, pigs and bricks have stopped moving
-    /// </summary>
-    /// <returns></returns>
     bool BricksBirdsPigsStoppedMoving()
     {
         foreach (var item in Bricks.Union(Birds).Union(Pigs))
@@ -290,38 +278,9 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
-    /// <summary>
-    /// Found here
-    /// http://www.bensilvis.com/?p=500
-    /// </summary>
-    /// <param name="screenWidth"></param>
-    /// <param name="screenHeight"></param>
     public static void AutoResize(int screenWidth, int screenHeight)
     {
         Vector2 resizeRatio = new Vector2((float)Screen.width / screenWidth, (float)Screen.height / screenHeight);
         GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(resizeRatio.x, resizeRatio.y, 1.0f));
     }
-
-    /// <summary>
-    /// Shows relevant GUI depending on the current game state
-    /// </summary>
-    /// 
-    /*void OnGUI()
-    {
-        AutoResize(800, 480);
-        switch (CurrentGameState)
-        {
-            case GameState.Start:
-                GUI.Label(new Rect(0, 150, 200, 100), "Tap the screen to start");
-                break;
-            case GameState.Won:
-                GUI.Label(new Rect(0, 150, 200, 100), "You won! Tap the screen to restart");
-                break;
-            case GameState.Lost:
-                GUI.Label(new Rect(0, 150, 200, 100), "You lost! Tap the screen to restart");
-                break;
-            default:
-                break;
-        }
-    }*/
 }

@@ -20,7 +20,7 @@ public class CameraFollow : MonoBehaviour
                 var birdPosition = BirdToFollow.transform.position;
                 float x = Mathf.Clamp(birdPosition.x, minCameraX, maxCameraX);
                 //camera follows bird's x position
-                transform.position = new Vector3(x, StartingPosition.y, StartingPosition.z);
+                //transform.position = new Vector3(x, StartingPosition.y, StartingPosition.z);
             }
             else
                 IsFollowing = false;
