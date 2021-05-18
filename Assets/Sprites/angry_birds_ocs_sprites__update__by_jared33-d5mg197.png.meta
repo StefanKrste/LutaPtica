@@ -5,6 +5,21 @@ TextureImporter:
   - first:
       213: 21300000
     second: angry_birds_ocs_sprites__update__by_jared33-d5mg197_0
+  - first:
+      213: 4067299453787661137
+    second: angry_birds_ocs_sprites__update__by_jared33-d5mg197_1
+  - first:
+      213: 642525744971699287
+    second: angry_birds_ocs_sprites__update__by_jared33-d5mg197_2
+  - first:
+      213: 5023487882824870200
+    second: angry_birds_ocs_sprites__update__by_jared33-d5mg197_3
+  - first:
+      213: -3406333501739085324
+    second: angry_birds_ocs_sprites__update__by_jared33-d5mg197_4
+  - first:
+      213: 7593450964127899248
+    second: angry_birds_ocs_sprites__update__by_jared33-d5mg197_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -91,7 +106,7 @@ TextureImporter:
         height: 69
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 3, y: 3, z: 0, w: 0}
+      border: {x: 0, y: 1, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -102,10 +117,115 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: angry_birds_ocs_sprites__update__by_jared33-d5mg197_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1491
+        width: 76
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1536722cd43f17830800000000000000
+      internalID: 4067299453787661137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_birds_ocs_sprites__update__by_jared33-d5mg197_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1421
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754d414c2c5bae800800000000000000
+      internalID: 642525744971699287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_birds_ocs_sprites__update__by_jared33-d5mg197_3
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 200
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83961452d9307b540800000000000000
+      internalID: 5023487882824870200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_birds_ocs_sprites__update__by_jared33-d5mg197_4
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 2270
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1545a4ab54ab0d0800000000000000
+      internalID: -3406333501739085324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_birds_ocs_sprites__update__by_jared33-d5mg197_5
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 2091
+        width: 95
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ed0388b6b516960800000000000000
+      internalID: 7593450964127899248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0989b6b48dd131249870b3ce2827a603
     internalID: 0
     vertices: []
     indices: 

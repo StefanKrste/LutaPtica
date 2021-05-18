@@ -8,6 +8,30 @@ TextureImporter:
   - first:
       213: 2151869798485354380
     second: 800px-ABPC_blocks_1_1
+  - first:
+      213: -4068358596836211508
+    second: 800px-ABPC_blocks_1_2
+  - first:
+      213: -6410208489684153495
+    second: 800px-ABPC_blocks_1_3
+  - first:
+      213: -3874124079850799847
+    second: 800px-ABPC_blocks_1_4
+  - first:
+      213: -4877442279368997674
+    second: 800px-ABPC_blocks_1_5
+  - first:
+      213: -9179729342945499008
+    second: 800px-ABPC_blocks_1_6
+  - first:
+      213: -8448803323660781688
+    second: 800px-ABPC_blocks_1_7
+  - first:
+      213: -6005707980255572155
+    second: 800px-ABPC_blocks_1_8
+  - first:
+      213: -7390062754151663945
+    second: 800px-ABPC_blocks_1_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -71,7 +95,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -83,7 +107,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -95,7 +119,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 8192
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -112,12 +136,12 @@ TextureImporter:
       name: 800px-ABPC_blocks_1_1
       rect:
         serializedVersion: 2
-        x: 464
-        y: 185
-        width: 38
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 462
+        y: 221
+        width: 37
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5219662, y: 0.5000004}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -125,6 +149,178 @@ TextureImporter:
       bones: []
       spriteID: c876c9d3e2afcdd10800000000000000
       internalID: 2151869798485354380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 800px-ABPC_blocks_1_0
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 245
+        width: 94
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecb9ccf059eb4090800000000000000
+      internalID: -8049083374946894614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 800px-ABPC_blocks_1_2
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 220
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4cba849694a87c0800000000000000
+      internalID: -4068358596836211508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 800px-ABPC_blocks_1_3
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 266
+        width: 97
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bce24675d5a07a0800000000000000
+      internalID: -6410208489684153495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 800px-ABPC_blocks_1_4
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 87
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91db4b4eca85c3ac0800000000000000
+      internalID: -3874124079850799847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 800px-ABPC_blocks_1_5
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 141
+        width: 77
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d44db5b618df4cb0800000000000000
+      internalID: -4877442279368997674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 800px-ABPC_blocks_1_6
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 2
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088e0838ccc0b9080800000000000000
+      internalID: -9179729342945499008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 800px-ABPC_blocks_1_7
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 155
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8873f0c0422dfba80800000000000000
+      internalID: -8448803323660781688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 800px-ABPC_blocks_1_8
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 290
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -9, y: 2}
+        - {x: -9, y: 4}
+        - {x: -8, y: 4}
+        - {x: -8, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f432c596077aca0800000000000000
+      internalID: -6005707980255572155
       vertices: []
       indices: 
       edges: []
