@@ -1,6 +1,8 @@
-Angry Birds style game
-===============
+Luta Ptica is a copy of the game Angry Bird
 
-An effor to replicate a level and relevant mechanisms of Rovio's famous Angry Birds game, built in Unity game engine. Source code is provided for educational purposes.
+The source code is taken from http://dgkanatsios.com/2014/07/28/angry-birds-clone-in-unity-3d-source-code-included-3/
 
-You can check here: http://dgkanatsios.com/2014/07/28/angry-birds-clone-in-unity-3d-source-code-included-3/ for the relevant blog post and tutorial whereas you can test the game here: http://unitysamples.azurewebsites.net/angrybirdsclone.html
+The code is modified to our needs.
+And use it to create a replica of the game Angry Bird.
+
+The game is made as a faculty project.
